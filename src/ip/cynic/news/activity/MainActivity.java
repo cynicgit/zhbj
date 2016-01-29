@@ -29,7 +29,7 @@ public class MainActivity extends SlidingFragmentActivity{
 		SlidingMenu slidingMenu = getSlidingMenu();//获取侧边栏对象
 		slidingMenu.setMode(SlidingMenu.LEFT); //设置模式 菜单在左边
 		// 设置触发方式 边缘滑动出现 或者屏幕中滑动出现
-		slidingMenu.setTouchModeAbove(SlidingMenu.TOUCHMODE_MARGIN);
+		slidingMenu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
 		slidingMenu.setBehindOffset(300);//设置主界面预留宽度
 		
 		initFragment();

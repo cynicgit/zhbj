@@ -98,13 +98,13 @@ public class MainFragment extends BaseFragment {
 		@Override
 		public Object instantiateItem(ViewGroup container, int position) {
 			View view = lists.get(position).mView;
-			mViewPager.addView(view);
+			container.addView(view);
 			return view;
 		}
 
 		@Override
 		public void destroyItem(ViewGroup container, int position, Object object) {
-			mViewPager.removeView((View) object);
+			container.removeView((View) object);
 		}
 
 	}
